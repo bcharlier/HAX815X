@@ -68,9 +68,7 @@ website:
 
 format:
   html:
-    theme:
-      spacelab
-      # light: spacelab
+    theme: flatly
     css: custom.scss
     # mainfont: Atkinson Hyperlegible
     html-math-method: katex
