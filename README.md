@@ -1,11 +1,15 @@
-# HAX712X: Software development for data science
+# HAX815X: Software development for data science
 
 (Almost) everything you need to know as an applied mathematician/statistician concerning coding and system administration.
 
 ## Teachers
 
-- Joseph Salmon: [joseph.salmon@umontpellier.fr](mailto:joseph.salmon@umontpellier.fr),
 - Benjamin Charlier: [benjamin.charlier@umontpellier.fr](mailto:benjamin.charlier@umontpellier.fr)
+
+## Authors
+
+- Benjamin Charlier: [benjamin.charlier@umontpellier.fr](mailto:benjamin.charlier@umontpellier.fr)
+- Joseph Salmon: [joseph.salmon@umontpellier.fr](mailto:joseph.salmon@umontpellier.fr),
 
 This course material was improved with the help of some students including:
 
@@ -15,4 +19,4 @@ This course material was improved with the help of some students including:
 ## Website
 
 
-The associated website is available at the following URL: [https://josephsalmon.github.io/HAX712X/](https://josephsalmon.github.io/HAX712X/)
+The associated website is available at the following URL: [bcharlier.github.io/HAX815X/](https://bcharlier.github.io/HAX815X/)

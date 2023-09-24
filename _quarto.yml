@@ -20,16 +20,15 @@ project:
     - Projects/2022-2023/README.qmd
     - Projects/2023-2024/README.qmd
     - Projects/README.qmd
-    - Bonus/README.qmd
 
 website:
-  title: "HAX712X: Software development for data sciences"
-  site-url: https://josephsalmon.github.io/HAX712X/
-  repo-url: https://github.com/josephsalmon/HAX712X
+  title: "HAX815X: Software development for data sciences"
+  site-url: https://bcharlier.github.io/HAX815X/
+  repo-url: https://github.com/bcharlier/HAX815X
   page-navigation: true
   repo-actions: [source, issue]
   navbar:
-    title: HAX712X
+    title: HAX815X
     background: primary
     search: true
     left:
@@ -57,18 +56,14 @@ website:
             href: Projects/README.qmd
           - text: "2023-2024"
             href: Projects/2023-2024/README.qmd
-          - text: "2022-2023"
-            href: Projects/2022-2023/README.qmd
-          - text: "2021-2022"
-            href: Projects/2021-2022/README.qmd
       - text: "Bonus"
         href: Bonus/README.qmd
     tools:
       - icon: github
-        href: https://github.com/josephsalmon/HAX712X
+        href: https://github.com/bcharlier/HAX815X
         text: GitHub
       - icon: bicycle
-        href: https://moodle.umontpellier.fr/course/view.php?id=22454
+        href: https://moodle.umontpellier.fr/course/view.php?id=24820
         text: Moodle
 
 format:

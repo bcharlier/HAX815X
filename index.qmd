@@ -1,22 +1,15 @@
-# HAX712X: Software development for data science
+# HAX815X: Software development for data science
 
 (Almost) everything you need to know as an applied mathematician/statistician concerning coding and system administration.
 
 ## Teachers
 
-- Joseph Salmon: [joseph.salmon@umontpellier.fr](mailto:joseph.salmon@umontpellier.fr),
 - Benjamin Charlier: [benjamin.charlier@umontpellier.fr](mailto:benjamin.charlier@umontpellier.fr)
-
-This course material was improved with the help of some students including:
-
-- [Amelie Vernay](https://github.com/AmelieVernay)
-- [Tanguy Lefort](https://github.com/tanglef)
 
 
 ## Prerequisite
 
-Students are expected to know basic notions of probabilities, optimization, linear algebra and statistics for this course.
-Some rudiments in coding are also expected (if, for, while, functions) but not mandatory.
+Some rudiments in coding are expected (if, for, while, functions) but not mandatory. Students are expected to know basic notions of statistics.
 
 ## Course description
 
@@ -27,43 +20,19 @@ Beyond `pandas` ninja skills, we will also introduce modern practices for coders
 
 |Date      |Teacher |Details |
 |----------|------|---------------------|
-|11/09/2023|BC    |[Command-line tools](Courses/Bash/tp.qmd)|
-|22/09/2023|BC    |[Version control with Git](Courses/Git/tp.qmd)|
-|29/09/2023|BC    |[IDE](Courses/IDE/tp.qmd) / [Python virtual environment](Courses/Venv/tp.qmd)|
-|06/10/2023|BC+JS |[Creating a Python Module](Courses/Python-modules/tp.qmd), [Classes & Exceptions](Courses/ClassesExceptions/tp.qmd)|
-|13/10/2023|JS    |[Markdown to html (Quarto, Sphinx,...)](Courses/Docs/tp.qmd),  [Continuous Integration (CI)](Courses/CI/tp.qmd)|
-|20/10/2023|JS    |[Pandas](Courses/Pandas/tp.qmd)|
-|27/10/2023|BC    |[Unit Tests](Courses/Test/tp.qmd)|
-|10/11/2023|JS    |[SciPy](Courses/ScipyNumpy/tp.qmd) |
-|17/11/2023|JS    |[Time & memory efficiency](Courses/TimeMemory/tp.qmd) |
-|20/11/2023|JS    |[Graphs](Courses/TimeMemory/tp.qmd) |
-|15/11/2023|BC+JS |The end:  Project presentations |
+|25/09/2023|BC    |[Command-line tools](Courses/Bash/tp.qmd), [Version control with Git](Courses/Git/tp.qmd)|
+|09/10/2023|BC    |[Version control with Git](Courses/Git/tp.qmd), [IDE](Courses/IDE/tp.qmd) / [Python virtual environment](Courses/Venv/tp.qmd)|
+|16/10/2023|BC    |[Creating a Python Module](Courses/Python-modules/tp.qmd), [Classes & Exceptions](Courses/ClassesExceptions/tp.qmd)|
+|23/10/2023|BC    |[SciPy](Courses/ScipyNumpy/tp.qmd), [Pandas](Courses/Pandas/tp.qmd)|
+|06/11/2023|BC    |[Markdown to html (Quarto, Sphinx,...)](Courses/Docs/tp.qmd), [Unit Tests](Courses/Test/tp.qmd), [Continuous Integration (CI)](Courses/CI/tp.qmd)|
+|14/11/2023|BC    |Project snapshots |
+|12/12/2023|BC    |The end: Project presentations |
 :  {.striped}
 
 
 ## Grading
 
-For this course, the grading consists of two projects: one group project (group composition available on [Moodle](https://moodle.umontpellier.fr/course/view.php?id=22454)) and a personal one.
-
-### Intermediate projects (20 % + 10 %)
-
-1. This is **a personal project**. We expect you to create a simple GitHub page, with information answering the guidelines. This part corresponds to **20% of the final grade**. The due date is **November 16 (23:59)**.
-
-2. This part consists of starting the **group project**. It will consist of preliminary work and organization of the workload, git first steps for the group project. The groups will be available on [Moodle](https://moodle.umontpellier.fr/course/view.php?id=22454). This part corresponds to **10% of the final grade**. The due date is **October 16 (23:59)**
-
-### Final project (70 %)
-
-The details of the projects might evolve before the allocation phase, and a precise grid will be given in the project section.
-
-The project repository **must show a balanced contribution between group members** and intra-group grade variation could be made to reflect issues on the intra-group workload balance.
-The due date is **December 10 (23:59)**.
-
-### Bonus
-
-**1 supplementary point** on the final grade of the course can be obtained for contributions to improve the course material (practicals, Readme, etc.).
-See the [Bonus](Bonus/README.qmd) section for more details on how to proceed.
-
-
+For this course, the grading consists of one group project.
 
 ## Books and other resources
 
@@ -71,7 +40,7 @@ The resources for the course are available on the present `GitHub` repository. A
 
 ### Moodle webpage
 
-The [Moodle web page](https://moodle.umontpellier.fr/course/view.php?id=22454) is available to registered students only.
+The [Moodle web page](https://moodle.umontpellier.fr/course/view.php?id=24820) is available to registered students only.
 
 ### Additional resources
 
