@@ -16,8 +16,6 @@ project:
     - Courses/Venv/tp.qmd
     - Courses/ClassesExceptions/tp.qmd
     - Projects/README.qmd
-    - Projects/2021-2022/README.qmd
-    - Projects/2022-2023/README.qmd
     - Projects/2023-2024/README.qmd
     - Projects/README.qmd
 
@@ -56,8 +54,6 @@ website:
             href: Projects/README.qmd
           - text: "2023-2024"
             href: Projects/2023-2024/README.qmd
-      - text: "Bonus"
-        href: Bonus/README.qmd
     tools:
       - icon: github
         href: https://github.com/bcharlier/HAX815X
@@ -68,7 +64,7 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: lux
     css: custom.scss
     # mainfont: Atkinson Hyperlegible
     html-math-method: katex
