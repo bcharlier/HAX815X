@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HAX712X: Software development for data sciences - Creating a python module</title>
+<title>HAX815X: Software development for data sciences - Creating a python module</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">HAX712X</span>
+    <span class="navbar-title">HAX815X</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -192,24 +192,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../Projects/2023-2024/README.html" rel="" target="">
  <span class="dropdown-text">2023-2024</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../Projects/2022-2023/README.html" rel="" target="">
- <span class="dropdown-text">2022-2023</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../Projects/2021-2022/README.html" rel="" target="">
- <span class="dropdown-text">2021-2022</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Bonus/README.html" rel="" target="">
+    <a class="nav-link" href="../../Bonus/README.qmd" rel="" target="">
  <span class="menu-text">Bonus</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/josephsalmon/HAX712X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://moodle.umontpellier.fr/course/view.php?id=22454" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -250,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#upload-on-pypi" id="toc-upload-on-pypi" class="nav-link" data-scroll-target="#upload-on-pypi">Upload on PyPI</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/josephsalmon/HAX712X/blob/main/Courses/Python-modules/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/josephsalmon/HAX712X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/Python-modules/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -303,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fibo.<span class="va">__file__</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>'/home/jsalmon/Documents/Mes_cours/Montpellier/HAX712X/Courses/Python-modules/fibo.py'</code></pre>
+<pre><code>'/home/bcharlier/enseignement/HAB796B9/2023-24/HAX815X/Courses/Python-modules/fibo.py'</code></pre>
 </div>
 </div>
 <p>When importing a module, several methods are (automatically) defined. Their names are usually prefixed and suffixed by the symbol <code>__</code>, e.g.,</p>
@@ -370,10 +362,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(numpy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>['ALLOW_THREADS',
- 'AxisError',
  'BUFSIZE',
  'CLIP',
- 'ComplexWarning',
  'DataSource',
  'ERR_CALL',
  'ERR_DEFAULT',
@@ -393,7 +383,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'MAXDIMS',
  'MAY_SHARE_BOUNDS',
  'MAY_SHARE_EXACT',
- 'ModuleDeprecationWarning',
  'NAN',
  'NINF',
  'NZERO',
@@ -407,12 +396,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'SHIFT_OVERFLOW',
  'SHIFT_UNDERFLOW',
  'ScalarType',
- 'Tester',
- 'TooHardError',
  'True_',
  'UFUNC_BUFSIZE_DEFAULT',
  'UFUNC_PYVALS_NAME',
- 'VisibleDeprecationWarning',
  'WRAP',
  '_CopyMode',
  '_NoValue',
@@ -432,6 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  '__getattr__',
  '__git_version__',
  '__loader__',
+ '__mkl_version__',
  '__name__',
  '__package__',
  '__path__',
@@ -450,6 +437,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  '_pytesttester',
  '_set_promotion_state',
  '_specific_msg',
+ '_typing',
+ '_using_numpy2_behavior',
+ '_utils',
  '_version',
  'abs',
  'absolute',
@@ -587,6 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'dsplit',
  'dstack',
  'dtype',
+ 'dtypes',
  'e',
  'ediff1d',
  'einsum',
@@ -597,10 +588,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'equal',
  'errstate',
  'euler_gamma',
+ 'exceptions',
  'exp',
  'exp2',
  'expand_dims',
  'expm1',
+ 'expm1x',
  'extract',
  'eye',
  'fabs',
@@ -746,7 +739,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'ma',
  'mask_indices',
  'mat',
- 'math',
  'matmul',
  'matrix',
  'max',
@@ -762,6 +754,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'min_scalar_type',
  'minimum',
  'mintypecode',
+ 'mkl',
  'mod',
  'modf',
  'moveaxis',
@@ -954,7 +947,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  'unravel_index',
  'unsignedinteger',
  'unwrap',
- 'use_hugepage',
  'ushort',
  'vander',
  'var',
@@ -985,7 +977,7 @@ hex(id(numpy.__dir__))
 
 ::: {.cell-output .cell-output-display execution_count=11}
 ```
-'0x7f7a89355a20'
+'0x7fb5d7f97670'
 ```
 :::
 :::
@@ -1050,7 +1042,7 @@ This is an integer (or long integer) that is guaranteed to be unique and constan
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>numpy_spec <span class="op">=</span> importlib.util.find_spec(<span class="st">"numpy"</span>)</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numpy_spec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>ModuleSpec(name='numpy', loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f7aacb4ba00&gt;, origin='/home/jsalmon/anaconda3/envs/peerannot/lib/python3.10/site-packages/numpy/__init__.py', submodule_search_locations=['/home/jsalmon/anaconda3/envs/peerannot/lib/python3.10/site-packages/numpy'])</code></pre>
+<pre><code>ModuleSpec(name='numpy', loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7fb5fc0de9d0&gt;, origin='/home/bcharlier/.conda/envs/hax712/lib/python3.9/site-packages/numpy/__init__.py', submodule_search_locations=['/home/bcharlier/.conda/envs/hax712/lib/python3.9/site-packages/numpy'])</code></pre>
 </div>
 </div>
 <p>should return more information and where the loader is.</p>
