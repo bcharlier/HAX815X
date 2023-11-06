@@ -2,11 +2,18 @@
 cache
 /.quarto/
 /_site/
+*.html
+site_libs
+
 
 *.csv
 *.geojson
 .~*
 .ipynb_checkpoints
+.*ipynb
 
 *.pdf
 
+tp_files
+
+/.luarc.json
