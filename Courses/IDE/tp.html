@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../Courses/CI/tp.html" rel="next">
+<link href="../../Courses/Git/tp.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +100,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../custom.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -115,15 +117,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Overview</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Courses</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-general-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">General tools</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-general-tools">    
         <li>
     <a class="dropdown-item" href="../../Courses/Bash/tp.html" rel="" target="">
  <span class="dropdown-text">Command-line tools</span></a>
@@ -137,34 +135,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Integrated Development Environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
- <span class="dropdown-text">Virtual Python Environment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../Courses/CI/tp.html" rel="" target="">
  <span class="dropdown-text">Continuous Integration</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/Docs/tp.html" rel="" target="">
- <span class="dropdown-text">Documentation with Sphinx</span></a>
+ <span class="dropdown-text">Markup languages / Documentation</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-python" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Python</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-python">    
+        <li class="dropdown-header">Dev. Tools</li>
         <li>
-    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
- <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
+ <span class="dropdown-text">Virtual Python Environment</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/ClassesExceptions/tp.html" rel="" target="">
  <span class="dropdown-text">Classes &amp; Exceptions</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
+ <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../Courses/Pandas/tp.html" rel="" target="">
- <span class="dropdown-text">Pandas</span></a>
-  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Scientific Python</li>
         <li>
     <a class="dropdown-item" href="../../Courses/Numpy/tp.html" rel="" target="">
  <span class="dropdown-text">Numpy cheat sheet</span></a>
@@ -177,52 +180,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../Courses/TimeMemory/tp.html" rel="" target="">
  <span class="dropdown-text">Time &amp; memory efficiency</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Visualization/tp.html" rel="" target="">
+ <span class="dropdown-text">Data Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Pandas</li>
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_titanic.html" rel="" target="">
+ <span class="dropdown-text">Titanic dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_airparif.html" rel="" target="">
+ <span class="dropdown-text">Airparif dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_bikes.html" rel="" target="">
+ <span class="dropdown-text">Bike accident dataset</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grading" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grading</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../Projects/README.html" rel="" target="">
- <span class="dropdown-text">Guidelines</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-grading">    
         <li>
     <a class="dropdown-item" href="../../Projects/2023-2024/README.html" rel="" target="">
- <span class="dropdown-text">2023-2024</span></a>
+ <span class="dropdown-text">2023-2024 Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Courses/IDE/tp.html">Integrated Development Environment</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#pythons-specific-ide" id="toc-pythons-specific-ide" class="nav-link active" data-scroll-target="#pythons-specific-ide">Python’s specific IDE</a></li>
-  <li><a href="#vscodecodium" id="toc-vscodecodium" class="nav-link" data-scroll-target="#vscodecodium">VSCode/Codium</a>
-  <ul class="collapse">
-  <li><a href="#install-a-vscode-extension" id="toc-install-a-vscode-extension" class="nav-link" data-scroll-target="#install-a-vscode-extension">Install a VSCode extension</a></li>
-  <li><a href="#an-advanced-text-editor" id="toc-an-advanced-text-editor" class="nav-link" data-scroll-target="#an-advanced-text-editor">An advanced text editor</a></li>
-  <li><a href="#using-vscode-as-a-python-ide" id="toc-using-vscode-as-a-python-ide" class="nav-link" data-scroll-target="#using-vscode-as-a-python-ide">Using VSCode as a Python IDE</a></li>
-  </ul></li>
-  <li><a href="#recommended-extensions-for-vs-code" id="toc-recommended-extensions-for-vs-code" class="nav-link" data-scroll-target="#recommended-extensions-for-vs-code">Recommended extensions for VS Code</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/IDE/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Bash/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Command-line tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Git/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version control with Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/IDE/tp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Integrated Development Environment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/CI/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Continuous Integration</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Docs/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markup languages / Documentation</span></a>
+  </div>
+</li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -343,16 +392,20 @@ EXERCISE: VSCode and Python
 <section id="recommended-extensions-for-vs-code" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-extensions-for-vs-code">Recommended extensions for VS Code</h2>
 <ul>
+<li>Python: <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></li>
+<li>Markdown: <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></li>
 <li>linter/flake8: <a href="https://marketplace.visualstudio.com/items?itemName=kevinglasson.cornflakes-linter">cornflakes</a></li>
-<li>Spell check: <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">SpellChecker</a> or <a href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly</a> or <a href="https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex">LTex</a></li>
+<li>Spell check: <a href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly</a>, <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">SpellChecker</a> or <a href="https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex">LTex</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a> to collaboratively edit and debug with others in real-time, regardless of your programming language.</li>
-<li>TODO: complete!</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto</a></li>
+<li>LaTeX: <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a></li>
+<li>etc.</li>
 </ul>
 
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -637,8 +690,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../Courses/Git/tp.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Version control with Git</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../Courses/CI/tp.html" class="pagination-link">
+        <span class="nav-page-text">Continuous Integration</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/IDE/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

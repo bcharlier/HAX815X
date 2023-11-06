@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../Courses/IDE/tp.html" rel="next">
+<link href="../../Courses/Bash/tp.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +100,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../custom.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -115,15 +117,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Overview</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Courses</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-general-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">General tools</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-general-tools">    
         <li>
     <a class="dropdown-item" href="../../Courses/Bash/tp.html" rel="" target="">
  <span class="dropdown-text">Command-line tools</span></a>
@@ -137,34 +135,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Integrated Development Environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
- <span class="dropdown-text">Virtual Python Environment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../Courses/CI/tp.html" rel="" target="">
  <span class="dropdown-text">Continuous Integration</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/Docs/tp.html" rel="" target="">
- <span class="dropdown-text">Documentation with Sphinx</span></a>
+ <span class="dropdown-text">Markup languages / Documentation</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-python" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Python</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-python">    
+        <li class="dropdown-header">Dev. Tools</li>
         <li>
-    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
- <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
+ <span class="dropdown-text">Virtual Python Environment</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/ClassesExceptions/tp.html" rel="" target="">
  <span class="dropdown-text">Classes &amp; Exceptions</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
+ <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../Courses/Pandas/tp.html" rel="" target="">
- <span class="dropdown-text">Pandas</span></a>
-  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Scientific Python</li>
         <li>
     <a class="dropdown-item" href="../../Courses/Numpy/tp.html" rel="" target="">
  <span class="dropdown-text">Numpy cheat sheet</span></a>
@@ -177,68 +180,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../Courses/TimeMemory/tp.html" rel="" target="">
  <span class="dropdown-text">Time &amp; memory efficiency</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Visualization/tp.html" rel="" target="">
+ <span class="dropdown-text">Data Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Pandas</li>
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_titanic.html" rel="" target="">
+ <span class="dropdown-text">Titanic dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_airparif.html" rel="" target="">
+ <span class="dropdown-text">Airparif dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_bikes.html" rel="" target="">
+ <span class="dropdown-text">Bike accident dataset</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grading" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grading</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../Projects/README.html" rel="" target="">
- <span class="dropdown-text">Guidelines</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-grading">    
         <li>
     <a class="dropdown-item" href="../../Projects/2023-2024/README.html" rel="" target="">
- <span class="dropdown-text">2023-2024</span></a>
+ <span class="dropdown-text">2023-2024 Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Courses/Git/tp.html">Version control with Git</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#setting-your-git-environment" id="toc-setting-your-git-environment" class="nav-link active" data-scroll-target="#setting-your-git-environment">Setting your Git environment</a></li>
-  <li><a href="#create-an-ssh-key" id="toc-create-an-ssh-key" class="nav-link" data-scroll-target="#create-an-ssh-key">Create an SSH key</a>
-  <ul class="collapse">
-  <li><a href="#unix-system" id="toc-unix-system" class="nav-link" data-scroll-target="#unix-system">Unix system</a></li>
-  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
-  </ul></li>
-  <li><a href="#setting-up-your-github-account" id="toc-setting-up-your-github-account" class="nav-link" data-scroll-target="#setting-up-your-github-account">Setting up your GitHub account</a>
-  <ul class="collapse">
-  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link" data-scroll-target="#create-a-github-account">Create a GitHub account</a></li>
-  <li><a href="#add-your-ssh-key" id="toc-add-your-ssh-key" class="nav-link" data-scroll-target="#add-your-ssh-key">Add your SSH key</a></li>
-  <li><a href="#create-a-remote-repository" id="toc-create-a-remote-repository" class="nav-link" data-scroll-target="#create-a-remote-repository">Create a remote repository</a></li>
-  </ul></li>
-  <li><a href="#interact-with-other-users" id="toc-interact-with-other-users" class="nav-link" data-scroll-target="#interact-with-other-users">Interact with other users</a>
-  <ul class="collapse">
-  <li><a href="#using-an-existing-repository" id="toc-using-an-existing-repository" class="nav-link" data-scroll-target="#using-an-existing-repository">Using an existing repository</a></li>
-  <li><a href="#debugging" id="toc-debugging" class="nav-link" data-scroll-target="#debugging">Debugging</a>
-  <ul class="collapse">
-  <li><a href="#identification-of-the-bad-commit" id="toc-identification-of-the-bad-commit" class="nav-link" data-scroll-target="#identification-of-the-bad-commit">Identification of the bad commit</a></li>
-  <li><a href="#create-a-new-branch-to-fix-the-problem" id="toc-create-a-new-branch-to-fix-the-problem" class="nav-link" data-scroll-target="#create-a-new-branch-to-fix-the-problem">Create a new branch to fix the problem</a></li>
-  <li><a href="#pull-request" id="toc-pull-request" class="nav-link" data-scroll-target="#pull-request">Pull request</a></li>
-  </ul></li>
-  <li><a href="#branch-merging-and-solving-conflicts" id="toc-branch-merging-and-solving-conflicts" class="nav-link" data-scroll-target="#branch-merging-and-solving-conflicts">Branch Merging and Solving conflicts</a></li>
-  </ul></li>
-  <li><a href="#to-go-further" id="toc-to-go-further" class="nav-link" data-scroll-target="#to-go-further">To go further</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/Git/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Bash/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Command-line tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Git/tp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Version control with Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/IDE/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Integrated Development Environment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/CI/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Continuous Integration</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Docs/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markup languages / Documentation</span></a>
+  </div>
+</li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -310,8 +343,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"first commit"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:XXXXXXXXXXXXXXXXXX/FirstRepo.git</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span>  origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:XXXXXXXXXXXXXXXXXX/FirstRepo.git</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span>  origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -393,7 +427,7 @@ EXERCISE: branches
 </section>
 <section id="pull-request" class="level3">
 <h3 class="anchored" data-anchor-id="pull-request">Pull request</h3>
-<p>Your work about bug fixing may interest the original author of the project. On GitHub, open a pull-request (PR). PRs are a set of commits that can be integrated directly by the author of the project in its repository and are thus a powerful tool for working with others.</p>
+<p>Your work about bug fixing may interest the original author of the project. On GitHub, open a pull request (PR). PRs are a set of commits that can be integrated directly by the author of the project in its repository and are thus a powerful tool for working with others.</p>
 </section>
 </section>
 <section id="branch-merging-and-solving-conflicts" class="level2">
@@ -425,15 +459,17 @@ EXERCISE: Conflicts identification
 </div>
 </div>
 </section>
-</section>
-<section id="to-go-further" class="level1">
-<h1>To go further</h1>
-<p>Please visit <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a></p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>Please visit <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a></li>
+</ul>
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -718,8 +754,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../Courses/Bash/tp.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Command-line tools</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../Courses/IDE/tp.html" class="pagination-link">
+        <span class="nav-page-text">Integrated Development Environment</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/Git/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

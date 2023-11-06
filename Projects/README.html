@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../Projects/2023-2024/README.html" rel="next">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../custom.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,15 +82,11 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Overview</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Courses</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-general-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">General tools</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-general-tools">    
         <li>
     <a class="dropdown-item" href="../Courses/Bash/tp.html" rel="" target="">
  <span class="dropdown-text">Command-line tools</span></a>
@@ -103,34 +100,39 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Integrated Development Environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Courses/Venv/tp.html" rel="" target="">
- <span class="dropdown-text">Virtual Python Environment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../Courses/CI/tp.html" rel="" target="">
  <span class="dropdown-text">Continuous Integration</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../Courses/Docs/tp.html" rel="" target="">
- <span class="dropdown-text">Documentation with Sphinx</span></a>
+ <span class="dropdown-text">Markup languages / Documentation</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-python" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Python</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-python">    
+        <li class="dropdown-header">Dev. Tools</li>
         <li>
-    <a class="dropdown-item" href="../Courses/Python-modules/tp.html" rel="" target="">
- <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+    <a class="dropdown-item" href="../Courses/Venv/tp.html" rel="" target="">
+ <span class="dropdown-text">Virtual Python Environment</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../Courses/ClassesExceptions/tp.html" rel="" target="">
  <span class="dropdown-text">Classes &amp; Exceptions</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../Courses/Python-modules/tp.html" rel="" target="">
+ <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../Courses/Pandas/tp.html" rel="" target="">
- <span class="dropdown-text">Pandas</span></a>
-  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Scientific Python</li>
         <li>
     <a class="dropdown-item" href="../Courses/Numpy/tp.html" rel="" target="">
  <span class="dropdown-text">Numpy cheat sheet</span></a>
@@ -143,45 +145,112 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../Courses/TimeMemory/tp.html" rel="" target="">
  <span class="dropdown-text">Time &amp; memory efficiency</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../Courses/Visualization/tp.html" rel="" target="">
+ <span class="dropdown-text">Data Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Pandas</li>
+        <li>
+    <a class="dropdown-item" href="../Courses/Pandas/pandas_titanic.html" rel="" target="">
+ <span class="dropdown-text">Titanic dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Courses/Pandas/pandas_airparif.html" rel="" target="">
+ <span class="dropdown-text">Airparif dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Courses/Pandas/pandas_bikes.html" rel="" target="">
+ <span class="dropdown-text">Bike accident dataset</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grading" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grading</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-grading">    
+        <li class="dropdown-header">Project</li>
         <li>
     <a class="dropdown-item" href="../Projects/README.html" rel="" target="">
- <span class="dropdown-text">Guidelines</span></a>
+ <span class="dropdown-text">Project guidelines</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../Projects/2023-2024/README.html" rel="" target="">
- <span class="dropdown-text">2023-2024</span></a>
+ <span class="dropdown-text">Structure your project</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Bonus</li>
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Projects/README.html">Project</a></li><li class="breadcrumb-item"><a href="../Projects/README.html">Project guidelines</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#project-guidelines" id="toc-project-guidelines" class="nav-link active" data-scroll-target="#project-guidelines">Project guidelines</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Projects/README.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Projects/README.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Project guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Projects/2023-2024/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Structure your project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Bonus</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">Bonus/README.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -194,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -479,8 +548,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Projects/2023-2024/README.html" class="pagination-link">
+        <span class="nav-page-text">Structure your project</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Projects/README.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

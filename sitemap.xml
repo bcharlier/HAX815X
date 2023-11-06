@@ -2,66 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Projects/2023-2024/README.html</loc>
-    <lastmod>2023-09-24T10:09:03.423Z</lastmod>
+    <lastmod>2023-11-06T12:03:08.738Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/ClassesExceptions/tp.html</loc>
-    <lastmod>2023-09-24T10:09:02.753Z</lastmod>
+    <lastmod>2023-11-06T12:03:00.871Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/TimeMemory/tp.html</loc>
-    <lastmod>2023-09-24T10:08:59.413Z</lastmod>
+    <lastmod>2023-11-06T12:02:55.825Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Numpy/tp.html</loc>
-    <lastmod>2023-09-24T10:08:05.726Z</lastmod>
+    <lastmod>2023-11-06T12:02:00.121Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Python-modules/tp.html</loc>
-    <lastmod>2023-09-24T10:07:46.130Z</lastmod>
+    <lastmod>2023-11-06T12:01:40.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bcharlier.github.io/HAX815X/Courses/Pandas/pandas_airparif.html</loc>
+    <lastmod>2023-11-06T12:01:31.751Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/IDE/tp.html</loc>
-    <lastmod>2023-09-24T10:07:19.140Z</lastmod>
+    <lastmod>2023-11-06T12:01:12.531Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Docs/tp.html</loc>
-    <lastmod>2023-09-24T10:07:15.446Z</lastmod>
+    <lastmod>2023-11-06T12:01:09.308Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Bash/tp.html</loc>
-    <lastmod>2023-09-24T10:07:14.253Z</lastmod>
+    <lastmod>2023-11-06T12:01:05.411Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/index.html</loc>
-    <lastmod>2023-09-24T10:07:13.320Z</lastmod>
+    <lastmod>2023-11-06T12:01:04.451Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/CI/tp.html</loc>
-    <lastmod>2023-09-24T10:07:14.593Z</lastmod>
+    <lastmod>2023-11-06T12:01:05.774Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Git/tp.html</loc>
-    <lastmod>2023-09-24T10:07:18.746Z</lastmod>
+    <lastmod>2023-11-06T12:01:12.148Z</lastmod>
   </url>
   <url>
-    <loc>https://bcharlier.github.io/HAX815X/Courses/Pandas/tp.html</loc>
-    <lastmod>2023-09-24T10:07:42.356Z</lastmod>
+    <loc>https://bcharlier.github.io/HAX815X/Courses/Pandas/pandas_titanic.html</loc>
+    <lastmod>2023-11-06T12:01:24.784Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bcharlier.github.io/HAX815X/Courses/Pandas/pandas_bikes.html</loc>
+    <lastmod>2023-11-06T12:01:37.231Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/ScipyNumpy/tp.html</loc>
-    <lastmod>2023-09-24T10:08:05.150Z</lastmod>
+    <lastmod>2023-11-06T12:01:59.518Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Test/tp.html</loc>
-    <lastmod>2023-09-24T10:08:06.120Z</lastmod>
+    <lastmod>2023-11-06T12:02:02.958Z</lastmod>
   </url>
   <url>
     <loc>https://bcharlier.github.io/HAX815X/Courses/Venv/tp.html</loc>
-    <lastmod>2023-09-24T10:08:59.883Z</lastmod>
+    <lastmod>2023-11-06T12:02:56.281Z</lastmod>
   </url>
   <url>
-    <loc>https://bcharlier.github.io/HAX815X/Projects/README.html</loc>
-    <lastmod>2023-09-24T10:09:02.987Z</lastmod>
+    <loc>https://bcharlier.github.io/HAX815X/Courses/Visualization/tp.html</loc>
+    <lastmod>2023-11-06T12:03:08.185Z</lastmod>
   </url>
 </urlset>

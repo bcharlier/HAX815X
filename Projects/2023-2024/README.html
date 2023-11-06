@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HAX815X: Software development for data sciences – readme</title>
+<title>HAX815X: Software development for data sciences - 2023-2024 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -64,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../custom.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,15 +115,11 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Overview</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Courses</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-general-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">General tools</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-general-tools">    
         <li>
     <a class="dropdown-item" href="../../Courses/Bash/tp.html" rel="" target="">
  <span class="dropdown-text">Command-line tools</span></a>
@@ -103,34 +133,39 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Integrated Development Environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
- <span class="dropdown-text">Virtual Python Environment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../Courses/CI/tp.html" rel="" target="">
  <span class="dropdown-text">Continuous Integration</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/Docs/tp.html" rel="" target="">
- <span class="dropdown-text">Documentation with Sphinx</span></a>
+ <span class="dropdown-text">Markup languages / Documentation</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-python" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Python</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-python">    
+        <li class="dropdown-header">Dev. Tools</li>
         <li>
-    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
- <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
+ <span class="dropdown-text">Virtual Python Environment</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/ClassesExceptions/tp.html" rel="" target="">
  <span class="dropdown-text">Classes &amp; Exceptions</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
+ <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../Courses/Pandas/tp.html" rel="" target="">
- <span class="dropdown-text">Pandas</span></a>
-  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Scientific Python</li>
         <li>
     <a class="dropdown-item" href="../../Courses/Numpy/tp.html" rel="" target="">
  <span class="dropdown-text">Numpy cheat sheet</span></a>
@@ -143,325 +178,327 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../../Courses/TimeMemory/tp.html" rel="" target="">
  <span class="dropdown-text">Time &amp; memory efficiency</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Visualization/tp.html" rel="" target="">
+ <span class="dropdown-text">Data Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Pandas</li>
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_titanic.html" rel="" target="">
+ <span class="dropdown-text">Titanic dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_airparif.html" rel="" target="">
+ <span class="dropdown-text">Airparif dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_bikes.html" rel="" target="">
+ <span class="dropdown-text">Bike accident dataset</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grading" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grading</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../Projects/README.html" rel="" target="">
- <span class="dropdown-text">Guidelines</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-grading">    
         <li>
     <a class="dropdown-item" href="../../Projects/2023-2024/README.html" rel="" target="">
- <span class="dropdown-text">2023-2024</span></a>
+ <span class="dropdown-text">2023-2024 Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Projects/2023-2024/README.html">2023-2024 Project</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
-  <ul class="collapse">
-  <li><a href="#intermediate-tasks" id="toc-intermediate-tasks" class="nav-link" data-scroll-target="#intermediate-tasks">Intermediate tasks</a></li>
-  <li><a href="#major-objectives" id="toc-major-objectives" class="nav-link" data-scroll-target="#major-objectives">Major objectives:</a></li>
-  <li><a href="#timing" id="toc-timing" class="nav-link" data-scroll-target="#timing">Timing</a></li>
-  <li><a href="#elements-expected-grading" id="toc-elements-expected-grading" class="nav-link" data-scroll-target="#elements-expected-grading">Elements expected / Grading</a>
-  <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#details" id="toc-details" class="nav-link" data-scroll-target="#details">Details</a></li>
-  <li><a href="#science" id="toc-science" class="nav-link" data-scroll-target="#science">Science</a></li>
-  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project structure</a></li>
-  <li><a href="#git-aspects" id="toc-git-aspects" class="nav-link" data-scroll-target="#git-aspects">Git aspects</a></li>
-  <li><a href="#object-programming-aspects" id="toc-object-programming-aspects" class="nav-link" data-scroll-target="#object-programming-aspects">Object programming aspects</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Dataset(s)</a></li>
-  <li><a href="#graphical-aspects" id="toc-graphical-aspects" class="nav-link" data-scroll-target="#graphical-aspects">Graphical aspects</a></li>
-  <li><a href="#timememory-evaluation" id="toc-timememory-evaluation" class="nav-link" data-scroll-target="#timememory-evaluation">Time/memory evaluation</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#test-and-ci" id="toc-test-and-ci" class="nav-link" data-scroll-target="#test-and-ci">Test and CI</a></li>
-  <li><a href="#deploy" id="toc-deploy" class="nav-link" data-scroll-target="#deploy">Deploy</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Projects/2023-2024/README.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Projects/2023-2024/README.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2023-2024 Project</span></a>
+  </div>
+</li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-<p>title: “Project guidelines: 2022-2023”</p>
-<hr>
-<ul>
-<li>Work in groups of 2 or 3 students.</li>
-</ul>
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>The project will be two-fold: handle datasets from French electricity consumption with the motivation to create</p>
-<ol type="1">
-<li>a visualization inspired by the image below,</li>
-<li>to predict electricity consumption on a future day.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.upenergie.com/wp-content/uploads/2022/04/la-consommation-delectricite-en-quelques-chiffres.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Electric consumption in France</figcaption>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">2023-2024 Project</h1>
 </div>
-<p><strong>Data link for prediction:</strong> for this part the dataset is available at <a href="https://odre.opendatasoft.com/explore/dataset/eco2mix-national-tr/information/?disjunctive.nature&amp;sort=-date_heure" class="uri">https://odre.opendatasoft.com/explore/dataset/eco2mix-national-tr/information/?disjunctive.nature&amp;sort=-date_heure</a>. The goal is simply to predict the consumption on Thursday 8 December for the whole day, at the country-wise scale. We will measure your score as a Mean Square Error on the 96 quarters of hours during that day, so your output should simply be a <code>.csv</code> file with the following structure:</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Heure</th>
-<th>Consommation (MW)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2022-12-08</td>
-<td>00:00</td>
-<td>30811</td>
-</tr>
-<tr class="even">
-<td>2022-12-08</td>
-<td>00:15</td>
-<td>30889</td>
-</tr>
-<tr class="odd">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="even">
-<td>2022-12-08</td>
-<td>23:45</td>
-<td>30878</td>
-</tr>
-</tbody>
-</table>
-<p>You will also display your prediction for all the sources (Gas, wind, etc.) on a simple graph of your choice.</p>
-<p><strong>Data link for visualization:</strong> For this part, the dataset is available at <a href="https://data.enedis.fr/explore/dataset/consommation-annuelle-residentielle-par-adresse/information/" class="uri">https://data.enedis.fr/explore/dataset/consommation-annuelle-residentielle-par-adresse/information/</a>.</p>
-<p>The motivation is to analyze and understand better the electricity consumption of the French household.</p>
-<p>The main task for this part of the project is to provide an interactive map of France at the city-wise level displaying the yearly average household electricity consumption between 2018 and 2021. The map should be clickable, and when clicking on a city, you would display the distribution (with a violin plot, a swarmplot or a KDE plot for instance) of consumption per household in this city over the four years.</p>
-<p><strong>Hint</strong>: you could be inspired by this gif</p>
-<p><img src="https://tinyurl.com/3hy49v4s" width="99%" align="middle"></p>
-<p>Could you also spot for Occitanie and Herault which cities have the largest/smallest consumption?</p>
-<section id="intermediate-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="intermediate-tasks">Intermediate tasks</h2>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="structure-your-project" class="level2">
+<h2 class="anchored" data-anchor-id="structure-your-project">Structure your project</h2>
+<ol type="1">
+<li><p>Create a new project from scratch: new working folder, git versionning, etc…</p></li>
+<li><p>Add a subfolder name <code>pygen</code> to create a python module. Add two sub-folder called <code>words</code> and <code>convert</code> in it. Your project structure should look like:</p></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    ├── pygen/</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    │     ├── __init__.py</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    │     ├── words/</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    │     │    └── __init__.py</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    │     └── convert/</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    │          └── __init__.py</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    ├── Readme.md</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    └── .gitignore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="english-words-in-the-human-proteome" class="level1">
+<h1>English Words in the Human Proteome</h1>
+<p>The objective of this first project is to discover if English words can be found in the sequences of the human proteome, i.e., in the sequences of all human proteins.</p>
+<section id="amino-acid-composition" class="level3">
+<h3 class="anchored" data-anchor-id="amino-acid-composition">Amino Acid Composition</h3>
+<p>In the first step, create 5 English words using the 20 amino acids.</p>
+</section>
+<section id="words" class="level3">
+<h3 class="anchored" data-anchor-id="words">Words</h3>
+<ol type="1">
+<li><p>Download the file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/english-common-words.txt"><code>english-common-words.txt</code></a>. This file contains the 3000 most common English words, with one word per line.</p></li>
+<li><p>Create a script <code>words_in_proteome.py</code> and write the function <code>read_words()</code> to read the words from the file provided as an argument to the script and return a list containing the words converted to uppercase and composed of 3 characters or more.</p></li>
+<li><p>In the main program, display the number of selected words.</p></li>
+</ol>
+</section>
+<section id="proteins" class="level3">
+<h3 class="anchored" data-anchor-id="proteins">Proteins</h3>
+<ol type="1">
+<li><p>Download the file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/human-proteome.fasta"><code>human-proteome.fasta</code></a>. Note that this file is quite large and comes from the UniProt database from this <a href="https://www.uniprot.org/help/human_proteome">page</a>.</p></li>
+<li><p>Here are the first lines of this file (the <code>[...]</code> indicates a cut we made):</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    sp|O95139|NDUB6_HUMAN NADH dehydrogenase [ubiquinone] 1 beta [...]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    MTGYTPDEKLRLQQLRELRRRWLKDQELSPREPVLPPQKMGPMEKFWNKFLENKSPWRKM</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    VHGVYKKSIFVFTHVLVPVWIIHYYMKYHVSEKPYGIVEKKSRIFPGDTILETGEVIPPM</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    KEFPDQHH</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    sp|O75438|NDUB1_HUMAN NADH dehydrogenase [ubiquinone] 1 beta [...]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    MVNLLQIVRDHWVHVLVPMGFVIGCYLDRKSDERLTAFRNKSMLFKRELQPSEEVTWK</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    sp|Q8N4C6|NIN_HUMAN Ninein OS=Homo sapiens OX=9606 GN=NIN PE=1 SV=4</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    MDEVEQDQHEARLKELFDSFDTTGTGSLGQEELTDLCHMLSLEEVAPVLQQTLLQDNLLG</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    RVHFDQFKEALILILSRTLSNEEHFQEPDCSLEAQPKYVRGGKRYGRRSLPEFQESVEEF</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    PEVTVIEPLDEEARPSHIPAGDCSEHWKTQRSEEYEAEGQLRFWNPDDLNASQSGSSPPQ</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><p>In the <code>words_in_proteome.py</code> script, write the function <code>read_sequences()</code> that will read the proteome from the file provided as the second argument of the script. This function will return a dictionary with protein identifiers as keys (e.g., O95139, O75438, Q8N4C6) and their associated sequences as values.</p></li>
+<li><p>In the main program, display the number of sequences read. For testing purposes, also display the sequence associated with the protein O95139.</p></li>
+</ol>
+</section>
+<section id="searching-for-words" class="level3">
+<h3 class="anchored" data-anchor-id="searching-for-words">Searching for Words</h3>
+<ol type="1">
+<li>Write the function <code>search_words_in_proteome()</code> that takes as arguments the list of words and the dictionary containing protein sequences. This function will count the number of sequences in which a word is present. The function will return a dictionary with words as keys and the number of sequences containing these words as values. The function will also display the following message for words found in the proteome:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ACCESS found in 1 sequences</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ACID found in 38 sequences</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ACT found in 805 sequences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This step may take a few minutes. Please be patient.</p>
+</section>
+<section id="the-most-frequent-word" class="level3">
+<h3 class="anchored" data-anchor-id="the-most-frequent-word">The Most Frequent Word</h3>
+<ol type="1">
+<li>Finally, write the function <code>find_most_frequent_word()</code> that takes the dictionary returned by the previous function <code>search_words_in_proteome()</code> as an argument. This function will display the word found in the most sequences and the number of sequences in which it was found in the following format:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>=&gt; xxx found in yyy sequences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li><p>What is this word?</p></li>
+<li><p>What percentage of the proteome sequences contain this word?</p></li>
+</ol>
+</section>
+<section id="being-more-comprehensive" class="level3">
+<h3 class="anchored" data-anchor-id="being-more-comprehensive">Being More Comprehensive</h3>
+<p>Up to this point, we have determined, for each word, the number of sequences in which it appears. We could go further and also calculate how many times each word appears in the sequences.</p>
+<ol type="1">
+<li><p>To do this, modify the <code>search_words_in_proteome()</code> function to count the number of occurrences of a word in the sequences. The <code>.count()</code> method will be useful.</p></li>
+<li><p>Determine which word is the most frequent in the human proteome.</p></li>
+</ol>
+</section>
+</section>
+<section id="genbank-to-fasta-converter" class="level1">
+<h1>GenBank to FASTA Converter</h1>
+<p>This project involves creating a file converter from GenBank format to FASTA format. The web page <a href="https://python.sdv.univ-paris-diderot.fr/annexe_formats_fichiers/">Some Data Formats Encountered in Biology</a> provides details about these two file formats.</p>
+<p>The dataset we will work with is the GenBank file of the yeast Saccharomyces cerevisiae’s chromosome I. The original file may be found at this <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_001133">url</a>.</p>
+<section id="reading-the-file" class="level3">
+<h3 class="anchored" data-anchor-id="reading-the-file">Reading the File</h3>
+<ol type="1">
+<li><p>Create a script <code>genbank2fasta.py</code> and write the function <code>read_file()</code> that takes the file’s name as an argument and returns the file’s content as a list of lines, where each line is a string.</p></li>
+<li><p>Test this function with the GenBank file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> and display the number of lines read.</p></li>
+</ol>
+</section>
+<section id="extracting-the-organism-name" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-the-organism-name">Extracting the Organism Name</h3>
+<p>In the same script, add the function <code>extract_organism()</code> that takes the content of the previously obtained file (as a list of lines) with the <code>read_file()</code> function and returns the name of the organism. To retrieve the correct line, you can check if the line’s first characters contain the keyword <code>ORGANISM</code>.</p>
+<ol start="3" type="1">
+<li>Test this function with the GenBank file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> and display the organism’s name.</li>
+</ol>
+</section>
+<section id="finding-genes" class="level3">
+<h3 class="anchored" data-anchor-id="finding-genes">Finding Genes</h3>
+<p>In the GenBank file, sense genes are indicated like this:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>   gene            58..272</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   gene            &lt;2480..&gt;2707</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and antisense genes (or complementary) like this:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>   gene            complement(55979..56935)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>   gene            complement(&lt;13363..&gt;13743)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The numeric values separated by <code>..</code> indicate the gene’s position in the genome (first base number, last base number).</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>&lt;</code> symbol indicates a partial gene at the 5’ end, meaning that the corresponding START codon is incomplete. Similarly, the <code>&gt;</code> symbol denotes a partial gene at the 3’ end, indicating that the corresponding STOP codon is incomplete. For more details, refer to the <a href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#BaseSpanB">NCBI documentation on gene boundaries</a>. Here, we propose to ignore these <code>&gt;</code> and <code>&lt;</code> symbols.</p>
+</div>
+</div>
+<p>Locate these different genes in the <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> file. To retrieve these gene lines, check if the line begins with</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>     gene            </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>(i.e., 5 spaces, followed by the word “gene,” followed by 12 spaces). To determine if it’s a sense or antisense gene, check for the presence of the word <code>complement</code> in the line read.</p>
+<ol start="4" type="1">
+<li>Then, if you wish to retrieve the start and end positions of the gene, we recommend using the <code>replace()</code> function and keeping only the numbers and <code>..</code>. For example,</li>
+</ol>
+<div class="sourceCode" id="cb10"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>    gene            &lt;2480..&gt;2707</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>will be changed to</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>2480..2707</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Finally, using the <code>.split()</code> method, you can easily retrieve the two integer values for the start and end of the gene.</p>
+<ol start="5" type="1">
+<li>In the same <code>genbank2fasta.py</code> script, add the function <code>find_genes()</code> that takes the file’s content (as a list of lines) as an argument and returns a list of genes.</li>
+</ol>
+<p>Each gene will itself be a list containing the first base number, the last base number, and a string “sense” for a sense gene and “antisense” for an antisense gene.</p>
+<ol start="6" type="1">
+<li>Test this function with the GenBank file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> and display the number of genes found, as well as the number of sense and antisense genes.</li>
+</ol>
+</section>
+<section id="extracting-the-nucleotide-sequence-of-the-genome" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-the-nucleotide-sequence-of-the-genome">Extracting the Nucleotide Sequence of the Genome</h3>
+<p>The genome size is indicated on the first line of a GenBank file. Find the genome size stored in the <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> file.</p>
+<p>In a GenBank file, the genome’s sequence is located between the lines</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ORIGIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>//</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li><p>Find the first and last lines of the genome sequence in the <code>NC_001133.gbk</code> file.</p></li>
+<li><p>To retrieve the lines containing the sequence, we suggest using an algorithm with a flag <code>is_dnaseq</code> (which will be either <code>True</code> or <code>False</code>). Here is the proposed pseudo-code algorithm:</p></li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>is_dnaseq &lt;- False</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>Read each line of the gbk file</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    If the line contains "//"</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>        is_dnaseq &lt;- False</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    If is_dnaseq is True</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>        Accumulate the sequence</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    If the line contains "ORIGIN"</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>        is_dnaseq &lt;- True</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>At the beginning, this flag will have the value <code>False</code>. Then, when it becomes <code>True</code>, you can read the lines containing the sequence, and when it becomes <code>False</code> again, you will stop.</p>
+<ol start="3" type="1">
+<li>Once the sequence is retrieved, simply remove the numbers, carriage returns, and other spaces (Tip: calculate the length of the sequence and compare it to the one mentioned in the gbk file).</li>
+</ol>
+<p>Still in the same <code>genbank2fasta.py</code> script, add the function <code>extract_sequence()</code> that takes the file’s content (as a list of lines) as an argument and returns the nucleotide sequence of the genome (as a string). The sequence should not contain spaces, numbers, or carriage returns.</p>
+<ol start="7" type="1">
+<li>Test this function with the GenBank file <a href="https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk"><code>NC_001133.gbk</code></a> and display the number of bases in the extracted sequence. Verify that you have not made any errors by comparing the size of the extracted sequence with the one found in the GenBank file.</li>
+</ol>
+</section>
+<section id="creating-the-reverse-complementary-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-reverse-complementary-sequence">Creating the Reverse Complementary Sequence</h3>
+<p>Still in the same script, add the function <code>construct_comp_inverse()</code> that takes a DNA sequence as a string and returns the reverse complementary sequence (also as a string).</p>
+<p>Remember that constructing the reverse complementary sequence of a DNA sequence involves:</p>
 <ul>
-<li>data <strong>cleaning steps</strong>: removing missing values if need be.</li>
+<li>Taking the complementary sequence, which means replacing base <code>a</code> with base <code>t</code>, <code>t</code> with <code>a</code>, <code>c</code> with <code>g</code>, and <code>g</code> with <code>c</code>.</li>
+<li>Taking the reverse, which means that the first base of the complementary sequence becomes the last base and vice versa, and so on.</li>
 </ul>
+<p>To make your work easier, only work with lowercase sequences.</p>
+<ol start="8" type="1">
+<li>Test this function with the sequences <code>atcg</code>, <code>AATTCCGG</code>, and <code>gattaca</code>.</li>
+</ol>
 </section>
-<section id="major-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="major-objectives">Major objectives:</h2>
+<section id="writing-a-fasta-file" class="level3">
+<h3 class="anchored" data-anchor-id="writing-a-fasta-file">Writing a FASTA File</h3>
+<p>Still in the same script, add the function <code>write_fasta()</code> that takes a file name (as a string), a comment (as a string), and a sequence (as a string) as arguments, and writes a FASTA file. The sequence should be written in lines no longer than 80 characters.</p>
+<p>As a reminder, a FASTA file follows the following format:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>&gt;comment</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>sequence on a line with a maximum of 80 characters</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>sequence continuation .........................</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>sequence continuation .........................</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="9" type="1">
+<li><p>Test this function with the following:</p>
 <ul>
-<li>displays <strong>interactive maps</strong>.</li>
-</ul>
-<p>Useful packages (non-exhaustive list): - <code>osmnx</code> - <code>plotly</code> - <code>folium</code> - <code>networkx</code></p>
+<li>File name: <code>test.fasta</code></li>
+<li>Comment: <code>my comment</code></li>
+<li>Sequence: <code>atcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcg</code></li>
+</ul></li>
+</ol>
 </section>
-<section id="timing" class="level2">
-<h2 class="anchored" data-anchor-id="timing">Timing</h2>
+<section id="extracting-genes" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-genes">Extracting Genes</h3>
+<p>Still in the same script, add the function <code>extract_genes()</code> that takes the list of genes, the complete nucleotide sequence (as a string), and the organism’s name (as a string) as arguments. For each gene:</p>
 <ul>
-<li><p><strong>Mid-term</strong> project snapshot: Due date <strong>November 15, 23:59</strong>. This will include the creation of a <code>github</code> repository (README.md, etc.), a short description of how the work is shared in the team and a detailed work program for the project including the tasks’ attribution (coding).</p></li>
-<li><p><strong>Preliminary presentation</strong>: An oral presentation with <em>Beamer</em> (duration: 5mn), in-person on date/place TBC (December 2, 11:30 to 13:00).</p></li>
-<li><p>Due date (final project): The <code>github</code> repository should be completed before <strong>Tuesday 6 December (23:59)</strong>. Nothing pushed after the deadline will be taken into account. The oral presentation (max: 20mn) will be in-person <strong>Friday 9 December (8:00AM)</strong> (room: 36.4).</p></li>
+<li>Extract the gene’s sequence in the complete sequence.</li>
+<li>Take the reverse complementary sequence (using the <code>construct_comp_inverse()</code> function if the gene is antisense).</li>
+<li>Save the gene in a FASTA format file (using the <code>write_fasta()</code> function).</li>
+<li>Display on the screen the gene number and the name of the created FASTA file.</li>
 </ul>
+<p>The first line of the FASTA files will be in the following format:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>&gt;organism-name|gene-number|start|end|sense or antisense</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The gene number will be consecutive from the first gene to the last. There will be no numbering difference between sense and antisense genes.</p>
+<ol start="10" type="1">
+<li>Test this function with the GenBank file <code>NC_001133.gbk</code>.</li>
+</ol>
 </section>
-<section id="elements-expected-grading" class="level2">
-<h2 class="anchored" data-anchor-id="elements-expected-grading">Elements expected / Grading</h2>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary">Summary</h3>
-<table class="table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 40%">
-<col style="width: 45%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>General</th>
-<th>Details</th>
-<th>Points (out of 20)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Mid-term</strong></td>
-<td>Git / branches</td>
-<td>1.5</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Task affectation</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Dataset creation</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td><strong>Preliminary-term</strong></td>
-<td>Beamer (structure, spelling)</td>
-<td>0.5</td>
-</tr>
-<tr class="odd">
-<td><strong>Code</strong></td>
-<td>Science Technical Problem Resolution</td>
-<td>4.5</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Readme/Comments/Pep8</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Unit Tests/CI/Deploy : wheel</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Class (create at least 1 class)</td>
-<td>0.5</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Reproducibility/Dataset loading</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Graphical aspects: Widgets, clickable map, etc.</td>
-<td>2.5</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Time/Memory efficiency</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Documentation</td>
-<td>1.5</td>
-</tr>
-<tr class="odd">
-<td><strong>Oral</strong></td>
-<td>Beamer (structure, spelling)</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Clarity / lively presentation / Rhythm / Show</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td><strong>Total</strong></td>
-<td></td>
-<td>20</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="details" class="level3">
-<h3 class="anchored" data-anchor-id="details">Details</h3>
+<section id="building-the-final-script" class="level3">
+<h3 class="anchored" data-anchor-id="building-the-final-script">Building the Final Script</h3>
+<p>To finish, modify the <code>genbank2fasta.py</code> script so that the GenBank file to be analyzed (in this example, <code>NC_001133.gbk</code>) is entered as an argument of the script.</p>
+<p>You will display an error message if:</p>
 <ul>
-<li><p>The ultimate goal is to provide a Python module that can be imported with <code>pip</code> and contains your work. A description of the procedure will be needed (imagine you are addressing to a user not aware of your package). An example of a project made in 2020, is available at <a href="https://github.com/tanglef/chaoseverywhere" class="uri">https://github.com/tanglef/chaoseverywhere</a>.</p></li>
-<li><p>Your Python module should have two submodules corresponding to the two main tasks (prediction and visualization)</p></li>
-<li><p>The project must be stored on a <code>github</code> repository.</p></li>
-<li><p>You have to choose a name for your project. Hereafter, it is denoted by <code>my_module_name</code>.</p></li>
-<li><p>It should contain all the aspects described below.</p></li>
+<li>The <code>genbank2fasta.py</code> script is used without an argument.</li>
+<li>The file provided as an argument does not exist.</li>
 </ul>
-</section>
-<section id="science" class="level3">
-<h3 class="anchored" data-anchor-id="science">Science</h3>
-<p>Solve (even partially) the problem raised in your project description.</p>
-</section>
-<section id="project-structure" class="level3">
-<h3 class="anchored" data-anchor-id="project-structure">Project structure</h3>
-<ul>
-<li><p>All the code will be placed in a subdirectory called <code>/my_module_name</code> (choosing your module name accordingly).</p></li>
-<li><p>A presentation (in an open source format: like Beamer, with TeX, see for instance some templates here <a href="https://github.com/josephsalmon/OrganizationFiles" class="uri">https://github.com/josephsalmon/OrganizationFiles</a>, or LibreOffice Impress) will be put in a <code>/beamer</code> directory. The later will be a short presentation of the work that will be orally presented during 15mn in front of a jury.</p></li>
-<li><p>A documentation (using <code>sphinx</code>) will be stored in a <code>/doc</code> subdirectory.</p></li>
-</ul>
-</section>
-<section id="git-aspects" class="level3">
-<h3 class="anchored" data-anchor-id="git-aspects">Git aspects</h3>
-<ul>
-<li><p>A (markdown) <code>readme.md</code> file introducing your work and the team member (first/last name + email).</p></li>
-<li><p>A <code>.gitignore</code> that prevents garbage files to be included in your project.</p></li>
-<li><p>Equilibrated commits in two branches should be done (<em>e.g.,</em> in the development branch and the master one), and merged for the milestone day.</p></li>
-</ul>
-</section>
-<section id="object-programming-aspects" class="level3">
-<h3 class="anchored" data-anchor-id="object-programming-aspects">Object programming aspects</h3>
-<ul>
-<li>You should code at least one <code>Python</code> class.</li>
-</ul>
-</section>
-<section id="datasets" class="level3">
-<h3 class="anchored" data-anchor-id="datasets">Dataset(s)</h3>
-<ul>
-<li>The data used should be available in a way that the end user does not need to perform a manual download of any kind (use the <code>download</code> package or variants for instance).</li>
-</ul>
-</section>
-<section id="graphical-aspects" class="level3">
-<h3 class="anchored" data-anchor-id="graphical-aspects">Graphical aspects</h3>
-<p>The repository will contain code of the following nature:</p>
-<ul>
-<li><p>A code producing a (possibly interactive) map.</p></li>
-<li><p>histograms/kde/swarmplots/etc. plots illustrating the data.</p></li>
-</ul>
-</section>
-<section id="timememory-evaluation" class="level3">
-<h3 class="anchored" data-anchor-id="timememory-evaluation">Time/memory evaluation</h3>
-<ul>
-<li>A full study of the time and memory footprint of the code produced will be provided for the whole pipeline used.</li>
-</ul>
-</section>
-<section id="documentation" class="level3">
-<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
-<ul>
-<li>Documentation should be added correctly for the functions written. Please use <code>sphinx</code>.</li>
-</ul>
-</section>
-<section id="test-and-ci" class="level3">
-<h3 class="anchored" data-anchor-id="test-and-ci">Test and CI</h3>
-<ul>
-<li>Provide unitary tests to check that the function you proposed satisfies the requirement you target.</li>
-<li>Implement a Continuous Integration solution with <code>github</code> that runs your unitary test at each commit.</li>
-</ul>
-</section>
-<section id="deploy" class="level3">
-<h3 class="anchored" data-anchor-id="deploy">Deploy</h3>
-<ul>
-<li>It should be possible to package your Python module using <code>wheel</code> (<em>i.e.</em>, you need to provide a <code>setup.py</code>, file).</li>
-</ul>
+<p>To help you, you may read the documentation of the <code>sys</code> and <code>os</code> modules.</p>
+<p>Test your finalized script.</p>
 
 
 </section>
 </section>
-</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -750,4 +787,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Projects/2023-2024/README.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

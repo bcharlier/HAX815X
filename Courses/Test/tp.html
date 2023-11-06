@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../Courses/Numpy/tp.html" rel="next">
+<link href="../../Courses/Python-modules/tp.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +100,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../custom.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -115,15 +117,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Overview</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-courses" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Courses</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-general-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">General tools</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-courses">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-general-tools">    
         <li>
     <a class="dropdown-item" href="../../Courses/Bash/tp.html" rel="" target="">
  <span class="dropdown-text">Command-line tools</span></a>
@@ -137,34 +135,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Integrated Development Environment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
- <span class="dropdown-text">Virtual Python Environment</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../Courses/CI/tp.html" rel="" target="">
  <span class="dropdown-text">Continuous Integration</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/Docs/tp.html" rel="" target="">
- <span class="dropdown-text">Documentation with Sphinx</span></a>
+ <span class="dropdown-text">Markup languages / Documentation</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-python" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Python</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-python">    
+        <li class="dropdown-header">Dev. Tools</li>
         <li>
-    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
- <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+    <a class="dropdown-item" href="../../Courses/Venv/tp.html" rel="" target="">
+ <span class="dropdown-text">Virtual Python Environment</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/ClassesExceptions/tp.html" rel="" target="">
  <span class="dropdown-text">Classes &amp; Exceptions</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../Courses/Python-modules/tp.html" rel="" target="">
+ <span class="dropdown-text">Creating a <code>python</code> module</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../Courses/Pandas/tp.html" rel="" target="">
- <span class="dropdown-text">Pandas</span></a>
-  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Scientific Python</li>
         <li>
     <a class="dropdown-item" href="../../Courses/Numpy/tp.html" rel="" target="">
  <span class="dropdown-text">Numpy cheat sheet</span></a>
@@ -177,52 +180,167 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../Courses/TimeMemory/tp.html" rel="" target="">
  <span class="dropdown-text">Time &amp; memory efficiency</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Visualization/tp.html" rel="" target="">
+ <span class="dropdown-text">Data Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Pandas</li>
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_titanic.html" rel="" target="">
+ <span class="dropdown-text">Titanic dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_airparif.html" rel="" target="">
+ <span class="dropdown-text">Airparif dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/Pandas/pandas_bikes.html" rel="" target="">
+ <span class="dropdown-text">Bike accident dataset</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grading" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grading</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../Projects/README.html" rel="" target="">
- <span class="dropdown-text">Guidelines</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-grading">    
         <li>
     <a class="dropdown-item" href="../../Projects/2023-2024/README.html" rel="" target="">
- <span class="dropdown-text">2023-2024</span></a>
+ <span class="dropdown-text">2023-2024 Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://github.com/bcharlier/HAX815X" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Courses/Venv/tp.html">Dev. Tools</a></li><li class="breadcrumb-item"><a href="../../Courses/Test/tp.html">Unit Tests</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#tests" id="toc-tests" class="nav-link active" data-scroll-target="#tests">Tests</a>
-  <ul class="collapse">
-  <li><a href="#why-tests-are-useful" id="toc-why-tests-are-useful" class="nav-link" data-scroll-target="#why-tests-are-useful">Why tests are useful</a></li>
-  <li><a href="#types-of-tests" id="toc-types-of-tests" class="nav-link" data-scroll-target="#types-of-tests">Types of tests</a></li>
-  <li><a href="#how-to-test" id="toc-how-to-test" class="nav-link" data-scroll-target="#how-to-test">How to test?</a></li>
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
-  </ul></li>
-  <li><a href="#code-coverage" id="toc-code-coverage" class="nav-link" data-scroll-target="#code-coverage">Code coverage</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/Test/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Dev. Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Venv/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Virtual Python Environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/ClassesExceptions/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Classes &amp; Exceptions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Python-modules/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a <code>python</code> module</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Test/tp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Unit Tests</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Scientific Python</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Numpy/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numpy cheat sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/ScipyNumpy/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SciPy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/TimeMemory/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time &amp; memory efficiency</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Visualization/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Visualization</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Pandas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Pandas/pandas_titanic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Titanic dataset</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Pandas/pandas_airparif.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Airparif dataset</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/Pandas/pandas_bikes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bike accident dataset</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
     </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -243,7 +361,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This lecture is adapted from</p>
+<p><strong>Disclaimer</strong>: this course is adapted from the following sources:</p>
 <ul>
 <li><a href="https://amueller.github.io/COMS4995-s19/slides/aml-02-python-git-testing/#45">Python, git &amp; testing</a> by Andreas Müller.</li>
 <li><a href="https://code.visualstudio.com/docs/python/testing">VSCode documentation Python testing</a>.</li>
@@ -260,15 +378,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>that bugs are not reintroduced.</li>
 <li>robustness to user errors.</li>
 <li>code is reachable (<em>i.e.</em>, it will actually be executed)</li>
+<li>etc.</li>
 </ul>
 </section>
 <section id="types-of-tests" class="level3">
 <h3 class="anchored" data-anchor-id="types-of-tests">Types of tests</h3>
-<p>There are different kinds of tests:</p>
+<p>There are different kinds of tests, with the more important ones being:</p>
 <ol type="1">
-<li>Unit tests: They test whether a function does the right thing.</li>
-<li>Integration tests: They test whether the system/process does the right thing.</li>
-<li>Non-regression tests: They test whether a bug got removed (and will not be reintroduced).</li>
+<li><strong>Unit tests</strong>: test whether a simple unit element (function, class, etc.) does the right thing.</li>
+<li><strong>Integration tests</strong>: test whether the different parts used by your software work well together.</li>
+<li><strong>Non-regression tests</strong>: test whether a new or modified functionality works correctly and that previous functionalities were not affected (e.g., removing a bug does not alter the rest of the code).</li>
 </ol>
 </section>
 <section id="how-to-test" class="level3">
@@ -290,13 +409,14 @@ EXERCISE: pytest
 </ol>
 </div>
 </div>
-<p>Get the path to <code>pytest</code> binary</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> pytest</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> pytest.__path__</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">/</span>path<span class="op">/</span>to<span class="op">/</span>pytest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>then, in a terminal</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> export PATH=<span class="va">$PATH</span>:/path/to/pytest</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pytest <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Get the path to <code>pytest</code> binary as follows with <code>python</code>:</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pytest</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pytest.__path__</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This outputs a directory containing the <code>pytest</code> binary, say <code>/path/to/pytest</code>. Then, to add the path containing <code>pytest</code> in your (Linux) system, you have to type the following command in your terminal:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ export PATH=$PATH:/path/to/pytest</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>$ pytest --help</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
@@ -317,7 +437,7 @@ EXERCISE: pytest
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_inc2():</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> inc2(<span class="op">-</span><span class="dv">1</span>) <span class="op">==</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To run these tests:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pytest test_inc.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>$ pytest test_inc.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -341,8 +461,8 @@ EXERCISE: documentation
 <h2 class="anchored" data-anchor-id="code-coverage">Code coverage</h2>
 <p><code>pytest</code> comes with some useful <a href="https://docs.pytest.org/en/latest/plugins.html">plugins</a>. In particular, we will use the coverage report plugin.</p>
 <p>A <strong>test coverage</strong> is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs. A program with high test coverage, measured as a percentage, has had more of its source code executed during testing: this suggests it has a lower chance of containing undetected software bugs compared to a program with low test coverage.</p>
-<p>To install the coverage plugin simply run</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pip install pytest-cov</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To install the coverage plugin simply run the <code>pip</code> command:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>$ pip install pytest-cov</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Assuming the <code>inc_cov.py</code> contains:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inc(x):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">0</span>:</span>
@@ -357,40 +477,41 @@ EXERCISE: documentation
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_inc():</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>     <span class="cf">assert</span> inc(<span class="dv">3</span>) <span class="op">==</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>then</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span> test_inc_cov.py <span class="at">--cov</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">=============================</span> test session starts ==============================</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">platform</span> linux <span class="at">--</span> Python 3.8.5, pytest-6.2.5, py-1.9.0, pluggy-0.13.1</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">rootdir:</span> /home/jsalmon/Documents/Mes_cours/Montpellier/HAX712X/Courses/Test</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">plugins:</span> tornasync-0.6.0.post2, cov-3.0.0, jupyter-server-1.0.9</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">collected</span> 0 items</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pytest test_inc_cov.py --cov</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>============================= test session starts =============================</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>platform linux -- Python 3.10.10, pytest-7.4.2, pluggy-1.0.0</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>rootdir: /home/jsalmon/Documents/Mes_cours/Montpellier/HAX712X/Courses/Test</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>plugins: dash-2.9.3, cov-4.1.0, anyio-3.6.2</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>collected 1 item</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="ex">-----------</span> coverage: platform linux, python 3.8.5-final-0 <span class="at">-----------</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Name</span>         Stmts   Miss  Cover</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="ex">--------------------------------</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="ex">inc_cov.py</span>       6      4    33%</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="ex">--------------------------------</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="ex">TOTAL</span>            6      4    33%</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="ex">============================</span> no tests ran in 0.02s =============================</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>test_inc_cov.py                                                          [100%]</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>---------- coverage: platform linux, python 3.10.10-final-0 ----------</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>Name              Stmts   Miss  Cover</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>-------------------------------------</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>inc_cov.py            6      2    67%</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>test_inc_cov.py       3      0   100%</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>-------------------------------------</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>TOTAL                 9      2    78%</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>===============================================================================</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>1 passed in 0.02s</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>===============================================================================</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Two lines in <code>inc_cov</code> module were not used. See</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span> <span class="at">--cov</span> <span class="at">--cov-report</span><span class="op">=</span>html test_inc_cov.py</span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>pytest --cov --cov-report=html test_inc_cov.py</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">=============================</span> test session starts ==============================</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">platform</span> linux <span class="at">--</span> Python 3.8.5, pytest-6.2.5, py-1.9.0, pluggy-0.13.1</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ex">rootdir:</span> /home/jsalmon/Documents/Mes_cours/Montpellier/HAX712X/Courses/Test</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ex">plugins:</span> tornasync-0.6.0.post2, cov-3.0.0, jupyter-server-1.0.9</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="ex">collected</span> 0 items</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>============================= test session starts =============================</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>platform linux -- Python 3.10.10, pytest-7.4.2, pluggy-1.0.0</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>rootdir: /home/jsalmon/Documents/Mes_cours/Montpellier/HAX712X/Courses/Test</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plugins: dash-2.9.3, cov-4.1.0, anyio-3.6.2</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>collected 1 item</span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="ex">-----------</span> coverage: platform linux, python 3.8.5-final-0 <span class="at">-----------</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Coverage</span> HTML written to dir htmlcov</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>test_inc_cov.py                                                          [100%]</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>---------- coverage: platform linux, python 3.10.10-final-0 ----------</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>Coverage HTML written to dir htmlcov</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>for details.</p>
-<p><strong>References</strong>:</p>
-<ul>
-<li><a href="https://pytest-cov.readthedocs.io/en/latest/">The pytest documentation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Code_coverage">Wikipedia: Code coverage</a></li>
-</ul>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -406,7 +527,7 @@ EXERCISE:
 <li>Load the <code>biketrauma</code> package you can download at <a href="https://github.com/HMMA238-2020/biketrauma/" class="uri">https://github.com/HMMA238-2020/biketrauma/</a></li>
 <li>Add some unit tests to <code>biketrauma</code> in a new sub-directory <code>./biketrauma/tests/</code>:
 <ul>
-<li><p>Create a first <code>test_df()</code> that test if the Côtes-d’or département has 459 accidents. Add a second <code>test_df_log()</code>&nbsp;testing that the log of the number of accidents in the département 92 is close to <code>7.651120176</code>.</p></li>
+<li><p>Create a first <code>test_df()</code> that test if the Côtes-d’or département has 152 accidents. Add a second <code>test_df_log()</code>&nbsp;testing that the log of the number of accidents in the département 92 is close to <code>7.161622002</code>.</p></li>
 <li><p>Create a <code>test_dl()</code> function that tests the <code>md5sum</code> hash of the downloaded file (a.k.a. <code>bicycle_db.csv</code>). You may use the <code>pooch</code> package or you can use this piece of code to compute the md5sum:</p></li>
 </ul></li>
 </ol>
@@ -419,25 +540,49 @@ EXERCISE:
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> chunk <span class="kw">in</span> <span class="bu">iter</span>(<span class="kw">lambda</span>: f.read(<span class="dv">4096</span>), <span class="st">b""</span>):</span>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>            hash_md5.update(chunk)</span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hash_md5.hexdigest()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You should achieve a 92% of code coverage:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-----------</span> coverage: platform linux, python 3.7.6-final-0 <span class="at">-----------</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Name</span>                                    Stmts   Miss  Cover</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-----------------------------------------------------------</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/__init__.py</span>                      4      0   100%</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/io/Load_db.py</span>                    9      0   100%</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/io/__init__.py</span>                   3      0   100%</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/preprocess/__init__.py</span>           0      0   100%</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/preprocess/get_accident.py</span>       9      0   100%</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/tests/test_biketrauma.py</span>        21      0   100%</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/vis/__init__.py</span>                  0      0   100%</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="ex">biketrauma/vis/plot_location.py</span>             6      4    33%</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="ex">-----------------------------------------------------------</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="ex">TOTAL</span>                                      52      4    92%</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>By running the following line in the <code>biketrauma/biketrauma</code> location:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>pytest --cov-report=html --cov=biketrauma tests/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- You should achieve a 92% of code coverage: -->
+<p>you should reach 79% of code coverage, and the report should look like this (see the <code>htmlcov/index.html</code> file for an interactive report):</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>---------- coverage: platform linux, python 3.10.10-final-0 ----------</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Name                                    Stmts   Miss  Cover</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>----------------------------------------------------------------------</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>biketrauma/__init__.py                      4      0   100%</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>biketrauma/io/Load_db.py                   22      5    77%</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>biketrauma/io/__init__.py                   3      0   100%</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>biketrauma/preprocess/__init__.py           0      0   100%</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>biketrauma/preprocess/get_accident.py       7      0   100%</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>biketrauma/vis/__init__.py                  0      0   100%</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>biketrauma/vis/plot_location.py             6      4    33%</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>----------------------------------------------------------------------</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>TOTAL                                      42      9    79%</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- ```default
+----------- coverage: platform linux, python 3.7.6-final-0 -----------
+Name                                    Stmts   Miss  Cover
+-----------------------------------------------------------
+biketrauma/__init__.py                      4      0   100%
+biketrauma/io/Load_db.py                    9      0   100%
+biketrauma/io/__init__.py                   3      0   100%
+biketrauma/preprocess/__init__.py           0      0   100%
+biketrauma/preprocess/get_accident.py       9      0   100%
+biketrauma/tests/test_biketrauma.py        21      0   100%
+biketrauma/vis/__init__.py                  0      0   100%
+biketrauma/vis/plot_location.py             6      4    33%
+-----------------------------------------------------------
+TOTAL                                      52      4    92%
+``` -->
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><a href="https://pytest-cov.readthedocs.io/en/latest/">The pytest documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Code_coverage">Wikipedia: Code coverage</a></li>
+</ul>
 
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -722,8 +867,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../Courses/Python-modules/tp.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Creating a <code>python</code> module</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../Courses/Numpy/tp.html" class="pagination-link">
+        <span class="nav-page-text">Numpy cheat sheet</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/bcharlier/HAX815X/blob/main/Courses/Test/tp.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/bcharlier/HAX815X/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
