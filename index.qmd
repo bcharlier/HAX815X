@@ -21,10 +21,10 @@ Beyond `pandas` ninja skills, we will also introduce modern practices for coders
 |Date      |Teacher |Details |
 |----------|------|---------------------|
 |25/09/2023|BC    |[Command-line tools](Courses/Bash/tp.qmd), [Version control with Git](Courses/Git/tp.qmd)|
-|09/10/2023|BC    |[Version control with Git](Courses/Git/tp.qmd), [IDE](Courses/IDE/tp.qmd) / [Python virtual environment](Courses/Venv/tp.qmd)|
-|16/10/2023|BC    |[Creating a Python Module](Courses/Python-modules/tp.qmd), [Classes & Exceptions](Courses/ClassesExceptions/tp.qmd)|
-|23/10/2023|BC    |[SciPy](Courses/ScipyNumpy/tp.qmd), [Pandas](Courses/Pandas/tp.qmd)|
-|06/11/2023|BC    |[Markdown to html (Quarto, Sphinx,...)](Courses/Docs/tp.qmd), [Unit Tests](Courses/Test/tp.qmd), [Continuous Integration (CI)](Courses/CI/tp.qmd)|
+|02/10/2023|BC    |[Version control with Git](Courses/Git/tp.qmd)|
+|16/10/2023|BC    |[Version control with Git](Courses/Git/tp.qmd), [IDE](Courses/IDE/tp.qmd) / [Python virtual environment](Courses/Venv/tp.qmd)         |
+|23/10/2023|BC    |[Python basics](https://python.sdv.univ-paris-diderot.fr/)|
+|06/11/2023|BC    |[SciPy](Courses/ScipyNumpy/tp.qmd), [Pandas](Courses/Pandas/pandas_titanic.qmd)|
 |14/11/2023|BC    |Project snapshots |
 |12/12/2023|BC    |The end: Project presentations |
 :  {.striped}
@@ -36,7 +36,7 @@ For this course, the grading consists of one group project.
 
 ## Books and other resources
 
-The resources for the course are available on the present `GitHub` repository. Additional elementary elements (**in French**) on Python are available in the course [HLMA310](http://josephsalmon.eu/HLMA310.html) and the associated lecture notes [IntroPython.pdf](http://josephsalmon.eu/enseignement/Montpellier/HLMA310/IntroPython.pdf).
+The resources for the course are available on the present `GitHub` repository. Additional elementary elements (**in French**) on Python are available in the course [python for biologists](https://python.sdv.univ-paris-diderot.fr/).
 
 ### Moodle webpage
 

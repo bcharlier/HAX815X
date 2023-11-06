@@ -2,6 +2,7 @@
 cache
 /.quarto/
 /_site/
+/_extensions/
 *.html
 site_libs
 
