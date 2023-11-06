@@ -18,9 +18,7 @@ project:
     - Courses/Venv/tp.qmd
     - Courses/ClassesExceptions/tp.qmd
     - Courses/Visualization/tp.qmd
-    - Projects/README.qmd
     - Projects/2023-2024/README.qmd
-    - Projects/README.qmd
 
 website:
   back-to-top-navigation: true
@@ -103,13 +101,7 @@ website:
       title: "Grading"
       collapse-level: 2
       contents:
-        - section: "Project"
-          contents:
-            - Projects/README.qmd
-            - Projects/2023-2024/README.qmd
-        - section: "Bonus"
-          contents:
-            - Bonus/README.qmd
+         - Projects/2023-2024/README.qmd
 
 format:
   html:

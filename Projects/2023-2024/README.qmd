@@ -1,0 +1,274 @@
+---
+title: "2023-2024 Project"
+---
+
+## Structure your project
+
+1. Create a new project from scratch: new working folder, git versionning, etc...
+
+2. Add a subfolder name `pygen` to create a python module. Add two sub-folder called `words` and `convert` in it. Your project structure should look like:
+
+```default
+project/
+    ├── pygen/
+    │     ├── __init__.py
+    │     ├── words/
+    │     │    └── __init__.py
+    │     └── convert/
+    │          └── __init__.py
+    ├── Readme.md
+    └── .gitignore
+```
+
+# English Words in the Human Proteome
+
+The objective of this first project is to discover if English words can be found in the sequences of the human proteome, i.e., in the sequences of all human proteins.
+
+### Amino Acid Composition
+
+In the first step, create 5 English words using the 20 amino acids.
+
+### Words
+
+1. Download the file [`english-common-words.txt`](https://python.sdv.univ-paris-diderot.fr/data-files/english-common-words.txt). This file contains the 3000 most common English words, with one word per line.
+
+2. Create a script `words_in_proteome.py` and write the function `read_words()` to read the words from the file provided as an argument to the script and return a list containing the words converted to uppercase and composed of 3 characters or more.
+
+3. In the main program, display the number of selected words.
+
+### Proteins
+
+1. Download the file [`human-proteome.fasta`](https://python.sdv.univ-paris-diderot.fr/data-files/human-proteome.fasta). Note that this file is quite large and comes from the UniProt database from this [page](https://www.uniprot.org/help/human_proteome).
+
+2. Here are the first lines of this file (the `[...]` indicates a cut we made):
+
+```default
+    sp|O95139|NDUB6_HUMAN NADH dehydrogenase [ubiquinone] 1 beta [...]
+    MTGYTPDEKLRLQQLRELRRRWLKDQELSPREPVLPPQKMGPMEKFWNKFLENKSPWRKM
+    VHGVYKKSIFVFTHVLVPVWIIHYYMKYHVSEKPYGIVEKKSRIFPGDTILETGEVIPPM
+    KEFPDQHH
+    sp|O75438|NDUB1_HUMAN NADH dehydrogenase [ubiquinone] 1 beta [...]
+    MVNLLQIVRDHWVHVLVPMGFVIGCYLDRKSDERLTAFRNKSMLFKRELQPSEEVTWK
+    sp|Q8N4C6|NIN_HUMAN Ninein OS=Homo sapiens OX=9606 GN=NIN PE=1 SV=4
+    MDEVEQDQHEARLKELFDSFDTTGTGSLGQEELTDLCHMLSLEEVAPVLQQTLLQDNLLG
+    RVHFDQFKEALILILSRTLSNEEHFQEPDCSLEAQPKYVRGGKRYGRRSLPEFQESVEEF
+    PEVTVIEPLDEEARPSHIPAGDCSEHWKTQRSEEYEAEGQLRFWNPDDLNASQSGSSPPQ
+```
+
+3. In the `words_in_proteome.py` script, write the function `read_sequences()` that will read the proteome from the file provided as the second argument of the script. This function will return a dictionary with protein identifiers as keys (e.g., O95139, O75438, Q8N4C6) and their associated sequences as values.
+
+4. In the main program, display the number of sequences read. For testing purposes, also display the sequence associated with the protein O95139.
+
+### Searching for Words
+
+1. Write the function `search_words_in_proteome()` that takes as arguments the list of words and the dictionary containing protein sequences. This function will count the number of sequences in which a word is present. The function will return a dictionary with words as keys and the number of sequences containing these words as values. The function will also display the following message for words found in the proteome:
+
+```default
+ACCESS found in 1 sequences
+ACID found in 38 sequences
+ACT found in 805 sequences
+```
+This step may take a few minutes. Please be patient.
+
+### The Most Frequent Word
+
+1. Finally, write the function `find_most_frequent_word()` that takes the dictionary returned by the previous function `search_words_in_proteome()` as an argument. This function will display the word found in the most sequences and the number of sequences in which it was found in the following format:
+
+```default
+=> xxx found in yyy sequences
+```
+
+2. What is this word?
+
+3. What percentage of the proteome sequences contain this word?
+
+### Being More Comprehensive
+
+Up to this point, we have determined, for each word, the number of sequences in which it appears. We could go further and also calculate how many times each word appears in the sequences.
+
+1. To do this, modify the `search_words_in_proteome()` function to count the number of occurrences of a word in the sequences. The `.count()` method will be useful.
+
+2. Determine which word is the most frequent in the human proteome.
+
+
+# GenBank to FASTA Converter
+
+This project involves creating a file converter from GenBank format to FASTA format. The web page [Some Data Formats Encountered in Biology](https://python.sdv.univ-paris-diderot.fr/annexe_formats_fichiers/) provides details about these two file formats.
+
+The dataset we will work with is the GenBank file of the yeast Saccharomyces cerevisiae's chromosome I. The original file may be found at this [url](https://www.ncbi.nlm.nih.gov/nuccore/NC_001133).
+
+### Reading the File
+
+1. Create a script `genbank2fasta.py` and write the function `read_file()` that takes the file's name as an argument and returns the file's content as a list of lines, where each line is a string.
+
+2. Test this function with the GenBank file [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) and display the number of lines read.
+
+### Extracting the Organism Name
+
+In the same script, add the function `extract_organism()` that takes the content of the previously obtained file (as a list of lines) with the `read_file()` function and returns the name of the organism. To retrieve the correct line, you can check if the line's first characters contain the keyword `ORGANISM`.
+
+3. Test this function with the GenBank file [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) and display the organism's name.
+
+### Finding Genes
+
+In the GenBank file, sense genes are indicated like this:
+
+```default
+   gene            58..272
+```
+
+or
+
+```default
+   gene            <2480..>2707
+```
+
+and antisense genes (or complementary) like this:
+
+```default
+   gene            complement(55979..56935)
+```
+
+or
+
+```default
+   gene            complement(<13363..>13743)
+```
+
+The numeric values separated by `..` indicate the gene's position in the genome (first base number, last base number).
+
+::: {.callout-important appearance='default' icon="false"}
+ The `<` symbol indicates a partial gene at the 5' end, meaning that the corresponding START codon is incomplete. Similarly, the `>` symbol denotes a partial gene at the 3' end, indicating that the corresponding STOP codon is incomplete. For more details, refer to the [NCBI documentation on gene boundaries](https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#BaseSpanB). Here, we propose to ignore these `>` and `<` symbols.
+:::
+
+Locate these different genes in the [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) file. To retrieve these gene lines, check if the line begins with
+
+```default
+     gene            
+```
+
+(i.e., 5 spaces, followed by the word "gene," followed by 12 spaces). To determine if it's a sense or antisense gene, check for the presence of the word `complement` in the line read.
+
+4. Then, if you wish to retrieve the start and end positions of the gene, we recommend using the `replace()` function and keeping only the numbers and `..`. For example,
+
+```default
+    gene            <2480..>2707
+```
+
+will be changed to
+
+```default
+2480..2707
+```
+
+Finally, using the `.split()` method, you can easily retrieve the two integer values for the start and end of the gene.
+
+5. In the same `genbank2fasta.py` script, add the function `find_genes()` that takes the file's content (as a list of lines) as an argument and returns a list of genes.
+
+Each gene will itself be a list containing the first base number, the last base number, and a string "sense" for a sense gene and "antisense" for an antisense gene.
+
+6. Test this function with the GenBank file [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) and display the number of genes found, as well as the number of sense and antisense genes.
+
+### Extracting the Nucleotide Sequence of the Genome
+
+The genome size is indicated on the first line of a GenBank file. Find the genome size stored in the [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) file.
+
+In a GenBank file, the genome's sequence is located between the lines
+
+```default
+ORIGIN
+```
+
+and
+
+```default
+//
+```
+
+1. Find the first and last lines of the genome sequence in the `NC_001133.gbk` file.
+
+2. To retrieve the lines containing the sequence, we suggest using an algorithm with a flag `is_dnaseq` (which will be either `True` or `False`). Here is the proposed pseudo-code algorithm:
+
+```default
+is_dnaseq <- False
+Read each line of the gbk file
+    If the line contains "//"
+        is_dnaseq <- False
+    If is_dnaseq is True
+        Accumulate the sequence
+    If the line contains "ORIGIN"
+        is_dnaseq <- True
+```
+
+At the beginning, this flag will have the value `False`. Then, when it becomes `True`, you can read the lines containing the sequence, and when it becomes `False` again, you will stop.
+
+3. Once the sequence is retrieved, simply remove the numbers, carriage returns, and other spaces (Tip: calculate the length of the sequence and compare it to the one mentioned in the gbk file).
+
+Still in the same `genbank2fasta.py` script, add the function `extract_sequence()` that takes the file's content (as a list of lines) as an argument and returns the nucleotide sequence of the genome (as a string). The sequence should not contain spaces, numbers, or carriage returns.
+
+7. Test this function with the GenBank file [`NC_001133.gbk`](https://python.sdv.univ-paris-diderot.fr/data-files/NC_001133.gbk) and display the number of bases in the extracted sequence. Verify that you have not made any errors by comparing the size of the extracted sequence with the one found in the GenBank file.
+
+### Creating the Reverse Complementary Sequence
+
+Still in the same script, add the function `construct_comp_inverse()` that takes a DNA sequence as a string and returns the reverse complementary sequence (also as a string).
+
+Remember that constructing the reverse complementary sequence of a DNA sequence involves:
+
+   - Taking the complementary sequence, which means replacing base `a` with base `t`, `t` with `a`, `c` with `g`, and `g` with `c`.
+   - Taking the reverse, which means that the first base of the complementary sequence becomes the last base and vice versa, and so on.
+
+To make your work easier, only work with lowercase sequences.
+
+8. Test this function with the sequences `atcg`, `AATTCCGG`, and `gattaca`.
+
+### Writing a FASTA File
+
+Still in the same script, add the function `write_fasta()` that takes a file name (as a string), a comment (as a string), and a sequence (as a string) as arguments, and writes a FASTA file. The sequence should be written in lines no longer than 80 characters.
+
+As a reminder, a FASTA file follows the following format:
+
+```default
+>comment
+sequence on a line with a maximum of 80 characters
+sequence continuation .........................
+sequence continuation .........................
+...
+```
+
+9. Test this function with the following:
+
+   - File name: `test.fasta`
+   - Comment: `my comment`
+   - Sequence: `atcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcgatcg`
+
+### Extracting Genes
+
+Still in the same script, add the function `extract_genes()` that takes the list of genes, the complete nucleotide sequence (as a string), and the organism's name (as a string) as arguments. For each gene:
+
+   - Extract the gene's sequence in the complete sequence.
+   - Take the reverse complementary sequence (using the `construct_comp_inverse()` function if the gene is antisense).
+   - Save the gene in a FASTA format file (using the `write_fasta()` function).
+   - Display on the screen the gene number and the name of the created FASTA file.
+
+The first line of the FASTA files will be in the following format:
+
+```default
+>organism-name|gene-number|start|end|sense or antisense
+```
+
+The gene number will be consecutive from the first gene to the last. There will be no numbering difference between sense and antisense genes.
+
+10. Test this function with the GenBank file `NC_001133.gbk`.
+
+### Building the Final Script
+
+To finish, modify the `genbank2fasta.py` script so that the GenBank file to be analyzed (in this example, `NC_001133.gbk`) is entered as an argument of the script.
+
+You will display an error message if:
+
+   - The `genbank2fasta.py` script is used without an argument.
+   - The file provided as an argument does not exist.
+
+To help you, you may read the documentation of the `sys` and `os` modules.
+
+Test your finalized script.
