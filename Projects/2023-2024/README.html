@@ -266,21 +266,104 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="structure-your-project" class="level2">
-<h2 class="anchored" data-anchor-id="structure-your-project">Structure your project</h2>
-<ol type="1">
-<li><p>Create a new project from scratch: new working folder, git versionning, etc…</p></li>
-<li><p>Add a subfolder name <code>pygen</code> to create a python module. Add two sub-folder called <code>words</code> and <code>convert</code> in it. Your project structure should look like:</p></li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project/</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    ├── pygen/</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    │     ├── __init__.py</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    │     ├── words/</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    │     │    └── __init__.py</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    │     └── convert/</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    │          └── __init__.py</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    ├── Readme.md</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    └── .gitignore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="guidelines">Guidelines</h2>
+<section id="schedule" class="level3">
+<h3 class="anchored" data-anchor-id="schedule">Schedule</h3>
+<p>The project should be done in groups of 4 peoples. The project’s deadline is <em>December 12, 2023</em>, from 13:15 to 14:45 in room TD5.127. Each group will be required to make an oral presentation.</p>
+<p>You will have the opportunity to ask questions about the project on <em>November 21, 2023</em>, from 13:15 to 14:45 in room TD36.209. Groups should be formed on this date, and various tasks should be assigned to team members.</p>
+</section>
+<section id="structure" class="level3">
+<h3 class="anchored" data-anchor-id="structure">Structure</h3>
+<p>The primary goals of this project are as follows:</p>
+<ul>
+<li><p>a GitHub repository containing all the code and description of your project.</p></li>
+<li><p>Organize your project structure as illustrated below, with <code>pygen</code> serving as the project’s name:</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project_root_dir/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   ├── pygen/</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   │     ├── __init__.py</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   │     ├── words/</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   │     │     └── __init__.py</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   │     └── convert/</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>   │           └── __init__.py</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   ├── Readme.md</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>   └── .gitignore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>The <code>Readme.md</code> file should include a comprehensive project description and provide a minimal working example that demonstrates the functionality of the code.</p></li>
+<li><p>Create slides for a brief presentation lasting 15 minutes, with an additional 5 minutes allocated for questions. The slide file should be included in the project repository.</p></li>
+</ul>
+<p>These objectives will help ensure the successful completion and presentation of your project.</p>
+</section>
+<section id="grading" class="level3">
+<h3 class="anchored" data-anchor-id="grading">Grading</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The project repository <strong>must show a balanced contribution between group members</strong> and intra-group grade variation could be made to reflect issues on the intra-group workload balance.</p>
+</div>
+</div>
+<table class="table-striped table">
+<caption></caption>
+<thead>
+<tr class="header">
+<th>General</th>
+<th>Details</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Git</strong></td>
+<td>Git repo (branch, commit, …)</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Code</strong></td>
+<td>Structure of the code</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Description / Documentation</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Work description</strong></td>
+<td>Clarity / Details</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Answer of Projects goals</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td><strong>Oral</strong></td>
+<td>Slides</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Oral presentation</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p>The Git component will assess your group’s capacity to collaboratively merge individual contributions. Individuals who have not made any contributions in Git will incur a penalty.</p>
+</section>
 </section>
 <section id="english-words-in-the-human-proteome" class="level1">
 <h1>English Words in the Human Proteome</h1>
