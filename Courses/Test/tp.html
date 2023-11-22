@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Courses/Numpy/tp.html" rel="next">
+<link href="../../Courses/ProfilingDebugging/tp.html" rel="next">
 <link href="../../Courses/Python-modules/tp.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -166,6 +166,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../Courses/Test/tp.html" rel="" target="">
  <span class="dropdown-text">Unit Tests</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../Courses/ProfilingDebugging/tp.html" rel="" target="">
+ <span class="dropdown-text">Debugging &amp; Profiling</span></a>
+  </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Scientific Python</li>
         <li>
@@ -178,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/TimeMemory/tp.html" rel="" target="">
- <span class="dropdown-text">Time &amp; memory efficiency</span></a>
+ <span class="dropdown-text">Sparse matrices, graphs and maps</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Courses/Visualization/tp.html" rel="" target="">
@@ -213,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
-    <a href="https://moodle.umontpellier.fr/course/view.php?id=24820" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
+    <a href="https://moodle.umontpellier.fr/course/view.php?id=28921" rel="" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-bicycle"></i></a>
     <a href="https://github.com/bcharlier/HAB796B9" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -269,6 +273,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Unit Tests</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Courses/ProfilingDebugging/tp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Debugging &amp; Profiling</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -295,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Courses/TimeMemory/tp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Time &amp; memory efficiency</span></a>
+ <span class="menu-text">Sparse matrices, graphs and maps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -542,7 +552,6 @@ EXERCISE:
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hash_md5.hexdigest()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>By running the following line in the <code>biketrauma/biketrauma</code> location:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>pytest --cov-report=html --cov=biketrauma tests/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<!-- You should achieve a 92% of code coverage: -->
 <p>you should reach 79% of code coverage, and the report should look like this (see the <code>htmlcov/index.html</code> file for an interactive report):</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>---------- coverage: platform linux, python 3.10.10-final-0 ----------</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Name                                    Stmts   Miss  Cover</span>
@@ -556,21 +565,6 @@ EXERCISE:
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>biketrauma/vis/plot_location.py             6      4    33%</span>
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>----------------------------------------------------------------------</span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>TOTAL                                      42      9    79%</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<!-- ```default
------------ coverage: platform linux, python 3.7.6-final-0 -----------
-Name                                    Stmts   Miss  Cover
------------------------------------------------------------
-biketrauma/__init__.py                      4      0   100%
-biketrauma/io/Load_db.py                    9      0   100%
-biketrauma/io/__init__.py                   3      0   100%
-biketrauma/preprocess/__init__.py           0      0   100%
-biketrauma/preprocess/get_accident.py       9      0   100%
-biketrauma/tests/test_biketrauma.py        21      0   100%
-biketrauma/vis/__init__.py                  0      0   100%
-biketrauma/vis/plot_location.py             6      4    33%
------------------------------------------------------------
-TOTAL                                      52      4    92%
-``` -->
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -874,8 +868,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Courses/Numpy/tp.html" class="pagination-link">
-        <span class="nav-page-text">Numpy cheat sheet</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Courses/ProfilingDebugging/tp.html" class="pagination-link">
+        <span class="nav-page-text">Debugging &amp; Profiling</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
