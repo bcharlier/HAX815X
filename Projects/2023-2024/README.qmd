@@ -2,23 +2,62 @@
 title: "2023-2024 Project"
 ---
 
-## Structure your project
+## Guidelines
 
-1. Create a new project from scratch: new working folder, git versionning, etc...
+### Schedule
 
-2. Add a subfolder name `pygen` to create a python module. Add two sub-folder called `words` and `convert` in it. Your project structure should look like:
+The project should be done in groups of 4 peoples. The project's deadline is *December 12, 2023*, from 13:15 to 14:45 in room TD5.127. Each group will be required to make an oral presentation.
+
+You will have the opportunity to ask questions about the project on *November 21, 2023*, from 13:15 to 14:45 in room TD36.209. Groups should be formed on this date, and various tasks should be assigned to team members.
+
+### Structure
+
+The primary goals of this project are as follows:
+
+   - a GitHub repository containing all the code and description of your project. 
+
+   - Organize your project structure as illustrated below, with `pygen` serving as the project's name:
 
 ```default
-project/
-    ├── pygen/
-    │     ├── __init__.py
-    │     ├── words/
-    │     │    └── __init__.py
-    │     └── convert/
-    │          └── __init__.py
-    ├── Readme.md
-    └── .gitignore
+project_root_dir/
+   ├── pygen/
+   │     ├── __init__.py
+   │     ├── words/
+   │     │     └── __init__.py
+   │     └── convert/
+   │           └── __init__.py
+   ├── Readme.md
+   └── .gitignore
 ```
+
+   - The `Readme.md` file should include a comprehensive project description and provide a minimal working example that demonstrates the functionality of the code.
+
+   - Create slides for a brief presentation lasting 15 minutes, with an additional 5 minutes allocated for questions. The slide file should be included in the project repository.
+
+These objectives will help ensure the successful completion and presentation of your project.
+
+### Grading
+
+::: {.callout-important}
+The project repository **must show a balanced contribution between group members** and intra-group grade variation could be made to reflect issues on the intra-group workload balance.
+:::
+
+|General             |Details                           |Points |
+|--------------------|----------------------------------|-------|
+|**Git**             | Git repo (branch, commit, ...)   |  3    |
+|**Code**            | Structure of the code            |  1    |
+|                    | Description / Documentation      |  2    |
+|**Work description**| Clarity / Details                |  2    |
+|                    | Answer of Projects goals         |  8    |
+|**Oral**            | Slides                           |  2    |
+|                    | Oral presentation                |  2    |
+| **Total**          |                                  |  20   |
+:  {.striped}
+
+The Git component will assess your group's capacity to collaboratively merge individual contributions. Individuals who have not made any contributions in Git will incur a penalty.
+
+
+     
 
 # English Words in the Human Proteome
 
