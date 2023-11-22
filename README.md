@@ -1,4 +1,4 @@
-# HAX815X: Software development for data science
+# HAB796B9: Software development for data science
 
 (Almost) everything you need to know as an applied mathematician/statistician concerning coding and system administration.
 
@@ -19,4 +19,4 @@ This course material was improved with the help of some students including:
 ## Website
 
 
-The associated website is available at the following URL: [bcharlier.github.io/HAX815X/](https://bcharlier.github.io/HAX815X/)
+The associated website is available at the following URL: [bcharlier.github.io/HAB796B9/](https://bcharlier.github.io/HAB796B9/)

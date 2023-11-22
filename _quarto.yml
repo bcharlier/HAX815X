@@ -23,9 +23,9 @@ project:
 website:
   back-to-top-navigation: true
   page-navigation: true # true not working in website
-  title: "HAX815X: Software development for data sciences"
-  site-url: https://bcharlier.github.io/HAX815X/
-  repo-url: https://github.com/bcharlier/HAX815X
+  title: "HAB796B9: Software development for data sciences"
+  site-url: https://bcharlier.github.io/HAB796B9/
+  repo-url: https://github.com/bcharlier/HAB796B9
   repo-actions: [source, issue]
   # sidebar:
   # left:
@@ -50,7 +50,7 @@ website:
   #   - href: Courses/TimeMemory/tp.qmd
   # menu: false
   navbar:
-    title: HAX815X
+    title: HAB796B9
     background: primary
     search: true
     tools:
@@ -58,7 +58,7 @@ website:
         href: https://moodle.umontpellier.fr/course/view.php?id=24820
         text: Moodle
       - icon: github
-        href: https://github.com/bcharlier/HAX815X
+        href: https://github.com/bcharlier/HAB796B9
         text: GitHub
     left:
       # - text: "Overview"
